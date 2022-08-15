@@ -9,7 +9,7 @@ const nextConfig = {
   swcMinify: true,
   images:{
      loader: "akamai",
-     path: " "
+     path: ""
    },
    basePath: "/next-js-pages",
    assetPrefix: "/nextjs-pages"
