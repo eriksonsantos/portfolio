@@ -7,12 +7,12 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
-  // images:{
-  //   loader: "akamai",
-  //   path: " "
-  // },
-  // basePath: "/next-js-pages",
-  // assetPrefix: "/nextjs-pages"
+  images:{
+     loader: "akamai",
+     path: " "
+   },
+   basePath: "/next-js-pages",
+   assetPrefix: "/nextjs-pages"
 
 }
 
