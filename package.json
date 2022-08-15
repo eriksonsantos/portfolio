@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "next start"
+    "test": "next build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.0",
