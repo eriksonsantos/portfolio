@@ -11,6 +11,8 @@ const nextConfig = {
     loader: "akamai",
     path: ""
   },
+  basePath: "/next-js-pages",
+  assetPrefix: "/nextjs-pages"
 
 }
 
