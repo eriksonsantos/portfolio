@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 
-import NavBar from '../../components/NavBar'
+import NavBar from '../components/NavBar'
 import styles from './home.module.scss'
 import Image from 'next/image'
 
-import { SonyCarousel, SonyContainer } from '../../components/SonyComponents'
-import CardsPortfolio from '../../components/Cards';
+import { SonyCarousel, SonyContainer } from '../components/SonyComponents'
+import CardsPortfolio from '../components/Cards';
 
 var item = [
   {
