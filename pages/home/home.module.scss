@@ -87,4 +87,15 @@
         color: white;
         margin-top: 30px;
     }
+
+    .Items{
+        display: flex;
+        justify-content: left;
+        flex-wrap:  wrap;
+
+    }
+}
+.Cards{
+    margin: '20px';
+    background-color: red($color: rgb(233, 20, 20));
 }

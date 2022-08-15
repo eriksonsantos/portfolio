@@ -3,10 +3,6 @@ import { useState, useEffect } from 'react';
 import NavBar from '../../components/NavBar'
 import styles from './home.module.scss'
 import Image from 'next/image'
-import ImageDesktop from './img/desktop.png'
-import ImageDataScience from './img/dataScience.png'
-import ImageWeb from './img/web.png'
-import Avatar from './img/avatar.png'
 
 import { SonyCarousel, SonyContainer } from '../../components/SonyComponents'
 import CardsPortfolio from '../../components/Cards';
@@ -15,18 +11,18 @@ var item = [
   {
     title: 'Desenvolvedor Web',
     description: 'Sou desenvolvedor Web com o domínio das seguintes tecnologias: Javascript, Node, React e Next JS',
-    image: ImageWeb
+    image: '/images/home/web.png'
   },
   {
     title: 'Desenvolvedor Desktop',
     description: 'Sou desenvolvedor Desktop com o domínio das seguintes tecnologias: Delphi, C/C++ e C#',
-    image: ImageDesktop
+    image: '/images/home/desktop.png'
 
   },
   {
     title: 'Data Science',
     description: 'Sou Desenvolvedor de soluções de aprendizado de maquina usando as seguintes tecnologias: Python(Numpy,Sklearn e tensorflow) e R',
-    image: ImageDataScience
+    image: '/images/home/dataScience.png'
   }
 
 ]
@@ -59,8 +55,8 @@ export default function Home() {
 
             {item.map((item, i) => {
               return (
-                <div>
-                  <Items key={i} item={item} />
+                <div key={i}>
+                  <Items item={item} />
 
                 </div>
               )
@@ -73,7 +69,7 @@ export default function Home() {
         <SonyContainer style={{ paddingTop: '50px' }}>
           <div className={styles.About}>
             <div className={styles.Avatar}>
-              <Image src={Avatar} className={`${styles.Image}`} width={150} height={150} />
+              <Image src={'/images/home/avatar.png'} className={`${styles.Image}`} width={150} height={150} />
             </div>
             <div>
               <div className={styles.Items}>
@@ -93,21 +89,51 @@ export default function Home() {
           <div className={styles.Portfolio}>
 
             <div>
+
+              <h2>Portfólio</h2>
+              <h4>Desenvolvimento Web</h4>
               <div className={styles.Items}>
+                {dataInformation.map((data, i) => {
+                  if (data.type === 1) {
+                    return (
+                      <div style={{ margin: '20px' }} key={i}>
+                        <CardsPortfolio props={data} />
+                      </div>
+                    )
+                  }
+                })}
+              </div>
 
-                <h2>Portfólio</h2>
-                <h4>Desenvolvimento Web</h4>
-                <CardsPortfolio/>
 
-                <h4>Desenvolvimento Desktop</h4>
+              <h4>Desenvolvimento Desktop</h4>
 
+              <div className={styles.Items}>
+                {dataInformation.map((data, i) => {
+                  if (data.type === 2) {
+                    return (
+                      <div style={{ margin: '20px' }} key={i}>
+                        <CardsPortfolio props={data} />
+                      </div>
+                    )
+                  }
+                })}
+              </div>
+              <h4>Data Science</h4>
 
-                <h4>Data Science</h4>
-              
-
+              <div className={styles.Items}>
+                {dataInformation.map((data, i) => {
+                  if (data.type === 3) {
+                    return (
+                      <div style={{ margin: '20px' }} key={i}>
+                        <CardsPortfolio props={data} />
+                      </div>
+                    )
+                  }
+                })}
               </div>
             </div>
           </div>
+
         </SonyContainer>
 
         <br />
@@ -116,4 +142,74 @@ export default function Home() {
 
   )
 }
+
+const dataInformation = [
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 2
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 1
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 1
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 1
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 1
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 1
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 1
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 2
+  },
+  {
+    title: 'Meu titulo',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  }
+
+]
 

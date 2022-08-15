@@ -1,4 +1,4 @@
-import Button from '@mui/material/Button';
+import Button from 'react-bootstrap/Button';
 
 function SonyButton (props){
     const {children} = props

@@ -1,19 +1,19 @@
-import Card from 'react-bootstrap/Card';
+import { SonyBodyCards, SonyTextCards, SonyTitleCards, SonyImgCards, SonyCards, SonyButton } from '../SonyComponents'
+import styles from './Cards.module.scss'
 
-import {SonyBodyCards, SonyTextCards, SonyTitleCards, SonyImgCards,SonyCards} from '../SonyComponents'
-
-export default function CardsPortfolio(props){
-    return (
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            {/* <Button variant="primary">Go somewhere</Button> */}
-          </Card.Body>
-        </Card>
-      );
+export default function CardsPortfolio({ props }) {
+  return (
+    <div className={styles.Container}>
+      <SonyCards className={styles.Cards} style={{ width: '20rem' }}>
+        <SonyImgCards variant="top" src={props.image} />
+        <SonyBodyCards>
+          <SonyTitleCards >{props.title}</SonyTitleCards>
+          <SonyTextCards >
+            {props.description}
+          </SonyTextCards>
+          <SonyButton variant="primary">GitHub</SonyButton>
+        </SonyBodyCards>
+      </SonyCards>
+    </div>
+  );
 }
