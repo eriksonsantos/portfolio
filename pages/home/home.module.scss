@@ -1,0 +1,90 @@
+.Principal {
+    height: 100vh;
+    background-image: url('img/background.jpg');
+    background-size: 100% 100%;
+
+    .Head {
+        height: 20%;
+    }
+
+    .Body {
+        height: 60vh;
+
+        p,
+        h1 {
+            text-align: center;
+        }
+
+        margin-top: 60px;
+
+        .Items {
+            text-align: center;
+
+            p {
+                margin-top: 50px;
+                color: white;
+            }
+
+            h1 {
+                margin-top: 20px;
+                color: white;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+}
+
+.Image {
+    border-radius: 50%;
+    width: 30px;
+}
+
+.About {
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Image {
+
+        margin-top: 50px;
+    }
+
+    .Items {
+        h2 {
+
+            text-align: center;
+            margin: 20px;
+            color: rgb(0, 225, 255);
+        }
+
+        p {
+            color: white;
+            line-height: 2;
+        }
+
+        flex-direction: column;
+
+        width: 70%;
+        margin: 0 auto;
+
+    }
+}
+
+.Portfolio {
+    h2 {
+        color: rgb(0, 225, 255);
+        text-align: center;
+    }
+
+    h4 {
+        color: white;
+        margin-top: 30px;
+    }
+}
