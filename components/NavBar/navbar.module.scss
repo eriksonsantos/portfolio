@@ -1,9 +1,25 @@
 
 
-.Logo {
-    background-image: url('logo.png');
-    background-repeat: no-repeat;
-    background-size: 250px 125px;
-    height: 125px;
-    width: 250px;
-}
+
+
+@media screen and (max-width: 600px) {
+    .Logo {
+        --sizeW : 25vw;
+        --sizeH: 10vh;
+        background-image: url('logo.png');
+        background-repeat: no-repeat;
+        background-size: var(--sizeW) var(--sizeH);
+        height: var(--sizeH);
+        width: var(--sizeW);
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    .Logo {
+        background-image: url('logo.png');
+        background-repeat: no-repeat;
+        background-size: 250px 125px;
+        height: 125px;
+        width: 250px;
+    }
+  }
