@@ -145,71 +145,99 @@ export default function Home() {
 
 const dataInformation = [
   {
-    title: 'Meu titulo',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 2
-  },
-  {
-    title: 'Meu titulo',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 1
-  },
-  {
-    title: 'Meu titulo',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 1
-  },
-  {
-    title: 'Meu titulo',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 1
-  },
-  {
-    title: 'Meu titulo',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 1
-  },
-  {
-    title: 'Meu titulo',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 1
-  },
-  {
-    title: 'Meu titulo',
+    title: 'CommonVoice',
     description: 'Minha descrição',
     image: 'images/portfolio/img.png',
     type: 3
-  },
-  {
-    title: 'Meu titulo',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 1
-  },
-  {
-    title: 'Meu titulo',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'Meu titulo',
+  }, {
+    title: 'oil-company',
     description: 'Minha descrição',
     image: 'images/portfolio/img.png',
     type: 2
-  },
-  {
-    title: 'Meu titulo',
+  }, {
+    title: 'PCA',
     description: 'Minha descrição',
     image: 'images/portfolio/img.png',
     type: 3
   }
+  , {
+    title: 'KDE',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'gaussianMixture',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'Clustering',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'Bayes',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'LSSVM',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'SVM',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'KNN',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'SVM',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'Automatic-vault',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 2
+  },
+  {
+    title: 'Traveling-Salesman',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 3
+  },
+  {
+    title: 'MatrixMips',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 2
+  },
+  {
+    title: 'aws-client',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 1
+  },
+  {
+    title: 'aws-server',
+    description: 'Minha descrição',
+    image: 'images/portfolio/img.png',
+    type: 1
+  },
 
 ]
 

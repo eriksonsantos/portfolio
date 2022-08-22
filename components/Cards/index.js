@@ -5,7 +5,7 @@ export default function CardsPortfolio({ props }) {
   return (
     <div className={styles.Container}>
       <SonyCards className={styles.Cards}>
-        <SonyImgCards variant="top" src={props.image} />
+        <SonyImgCards className={styles.Image} variant="top" src={props.image} />
         <SonyBodyCards>
           <SonyTitleCards >{props.title}</SonyTitleCards>
           <SonyTextCards >
