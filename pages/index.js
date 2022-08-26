@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import NavBar from '../components/NavBar'
 import styles from './home.module.scss'
 import Image from 'next/image'
+import dataInformation from './data'
 
 import { SonyCarousel, SonyContainer } from '../components/SonyComponents'
 import CardsPortfolio from '../components/Cards';
@@ -85,12 +86,12 @@ export default function Home() {
           </div>
         </SonyContainer>
 
-        <SonyContainer style={{ paddingTop: '50px' }}>
+        <SonyContainer>
           <div className={styles.Portfolio}>
 
             <div>
 
-              <h2>Portfólio</h2>
+              <h2 style={{ paddingTop: '50px' }}>Portfólio</h2>
               <h4>Desenvolvimento Web</h4>
               <div className={styles.Items}>
                 {dataInformation.map((data, i) => {
@@ -143,101 +144,5 @@ export default function Home() {
   )
 }
 
-const dataInformation = [
-  {
-    title: 'CommonVoice',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  }, {
-    title: 'oil-company',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 2
-  }, {
-    title: 'PCA',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  }
-  , {
-    title: 'KDE',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'gaussianMixture',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'Clustering',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'Bayes',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'LSSVM',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'SVM',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'KNN',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'SVM',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'Automatic-vault',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 2
-  },
-  {
-    title: 'Traveling-Salesman',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 3
-  },
-  {
-    title: 'MatrixMips',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 2
-  },
-  {
-    title: 'aws-client',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 1
-  },
-  {
-    title: 'aws-server',
-    description: 'Minha descrição',
-    image: 'images/portfolio/img.png',
-    type: 1
-  },
 
-]
 

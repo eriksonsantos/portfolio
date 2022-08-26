@@ -1,3 +1,4 @@
+import { minHeight, minWidth, textAlign } from '@mui/system';
 import { SonyBodyCards, SonyTextCards, SonyTitleCards, SonyImgCards, SonyCards, SonyButton } from '../SonyComponents'
 import styles from './Cards.module.scss'
 
@@ -11,7 +12,12 @@ export default function CardsPortfolio({ props }) {
           <SonyTextCards >
             {props.description}
           </SonyTextCards>
-          <SonyButton variant="primary">GitHub</SonyButton>
+          <div style={{display: 'flex', justifyContent: 'space-between'}}>
+            <SonyButton variant="primary">GitHub</SonyButton>
+            <SonyTextCards className = {styles.language}>
+              {props.language}
+            </SonyTextCards>
+          </div>
         </SonyBodyCards>
       </SonyCards>
     </div>

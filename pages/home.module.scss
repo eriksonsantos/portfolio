@@ -45,16 +45,16 @@
 }
 
 .About {
-
+    background-image: url('img/background2.webp');
     div {
         display: flex;
         justify-content: center;
     }
 
-    .Image {
+    // .Image {
 
-        margin-top: 50px;
-    }
+    //     // padding-top: 50px;
+    // }
 
     .Items {
         h2 {
@@ -78,6 +78,7 @@
 }
 
 .Portfolio {
+    background-image: url('img/background2.webp');
     h2 {
         color: rgb(0, 225, 255);
         text-align: center;
@@ -97,5 +98,5 @@
 }
 .Cards{
     margin: '20px';
-    background-color: red($color: rgb(233, 20, 20));
+    // background-color: red($color: rgb(233, 20, 20));
 }
