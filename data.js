@@ -6,7 +6,8 @@ const dataInformation = [
         em encontrar qual faixa etária uma voz de uma pessoa se encontra. `,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'Python'
+        language: 'Python',
+        link: 'https://github.com/eriksonsantos/CommonVoice/blob/main/main.ipynb'
     }, {
         title: 'oil-company',
         description: `Esse software foi desenvolvido para um trabalho final da materia de Automação em Tempo Real. 
@@ -17,7 +18,8 @@ const dataInformation = [
       `,
         image: 'images/portfolio/img.png',
         type: 2,
-        language: 'C++'
+        language: 'C++',
+        link: 'https://github.com/eriksonsantos/oil-company'
     }, {
         title: 'PCA',
         description: `Essa aplicação têm como objetivo utilizar o algoritmo de PCA 
@@ -26,7 +28,8 @@ const dataInformation = [
         Foi utilizado essa técnica para resolução de um problema de reconhecimento facial. `,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'Python'
+        language: 'Python',
+        link: 'https://github.com/eriksonsantos/PCA/blob/main/PCA.ipynb'
     }
     , {
         title: 'KDE',
@@ -34,7 +37,8 @@ const dataInformation = [
          mlbench.spirals e ver o seu resultado perante a classificação desse tipo de problema`,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'R'
+        language: 'R',
+        link: 'https://github.com/eriksonsantos/KDE/blob/main/kde.ipynb'
     },
     {
         title: 'gaussianMixture',
@@ -44,7 +48,8 @@ const dataInformation = [
       para ver o seu desempenho referente a porcentagem de acerto(acurácia) para os dados de testes.`,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'R'
+        language: 'R',
+        link: 'https://github.com/eriksonsantos/gaussianMixture/blob/main/misturaGaussiana.ipynb'
     },
     {
         title: 'Clustering',
@@ -53,7 +58,8 @@ const dataInformation = [
       entre si.`,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'R'
+        language: 'R',
+        link: 'https://github.com/eriksonsantos/Clustering/blob/main/Untitled.ipynb'
     },
     {
         title: 'Bayes',
@@ -61,7 +67,8 @@ const dataInformation = [
        foi testado em uma base de dados gerados de duas classes e observou-se o resultado perante a classificação dessas amostras`,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'Python'
+        language: 'Python',
+        link: 'https://github.com/eriksonsantos/Bayes/blob/main/Bayes.ipynb'
     },
     {
         title: 'LSSVM',
@@ -69,7 +76,8 @@ const dataInformation = [
         a acurácia e  Matriz de Confusão.`,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'R'
+        language: 'R',
+        link: 'https://github.com/eriksonsantos/LSSVM/blob/main/Untitled.ipynb'
     },
     {
         title: 'SVM',
@@ -78,7 +86,8 @@ const dataInformation = [
         tipos de Kernels têm para a solução final do problema.`,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'Python e R'
+        language: 'Python e R',
+        link: 'https://github.com/eriksonsantos/SVM/blob/main/part1.ipynb'
     },
     {
         title: 'KNN',
@@ -86,7 +95,8 @@ const dataInformation = [
         a classe de uma amostra usando como base a classe dos seus K vizinhos mais próximos. `,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'Python'
+        language: 'Python',
+        link: 'https://github.com/eriksonsantos/KNN/blob/main/Untitled.ipynb'
     },
     {
         title: 'Automatic-vault',
@@ -98,7 +108,8 @@ const dataInformation = [
       Depois disso ser feito, foi desenvolvido o código em VHDL referente o funcionamento do Cofre Automático com senha.`,
         image: 'images/portfolio/img.png',
         type: 2,
-        language: 'VHDL'
+        language: 'VHDL',
+        link: 'https://github.com/eriksonsantos/Automatic-vault'
 
     },
     {
@@ -110,7 +121,8 @@ const dataInformation = [
       `,
         image: 'images/portfolio/img.png',
         type: 3,
-        language: 'MatLab'
+        language: 'MatLab',
+        link: 'https://github.com/eriksonsantos/Traveling-Salesman'
     },
     {
         title: 'MatrixMips',
@@ -118,7 +130,8 @@ const dataInformation = [
       objetivo desse software é implementar uma calculadora que faz Soma, multiplicação e Transposta de 2 matrizes em Assembly.`,
         image: 'images/portfolio/img.png',
         type: 2,
-        language: 'Assembly'
+        language: 'Assembly',
+        link: 'https://github.com/eriksonsantos/MatrixMips/blob/main/Matriz.asm'
     },
     {
         title: 'aws-client',
@@ -127,7 +140,8 @@ const dataInformation = [
       aplicação foi publicada na Amazon AWS usando o EC2.`,
         image: 'images/portfolio/img.png',
         type: 1,
-        language: 'Javascript'
+        language: 'Javascript',
+        link: 'https://github.com/eriksonsantos/aws-client'
     },
     {
         title: 'aws-server',
@@ -137,7 +151,8 @@ const dataInformation = [
       para a requisição e os dados inseridos a partir dela.`,
         image: 'images/portfolio/img.png',
         type: 1,
-        language: 'Javascript'
+        language: 'Javascript',
+        link: 'https://github.com/eriksonsantos/aws-server'
     },
 
 ]
