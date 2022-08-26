@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import NavBar from '../components/NavBar'
 import styles from './home.module.scss'
 import Image from 'next/image'
-import dataInformation from './data'
+import dataInformation from '../data'
 
 import { SonyCarousel, SonyContainer } from '../components/SonyComponents'
 import CardsPortfolio from '../components/Cards';
