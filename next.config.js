@@ -11,8 +11,8 @@ const nextConfig = {
      loader: "akamai",
      path: ""
    },
-   basePath: "/portfolio",
-   assetPrefix: "/portfolio"
+   basePath: "/",
+   assetPrefix: "/"
 
 }
 
