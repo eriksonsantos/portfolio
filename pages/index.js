@@ -5,7 +5,7 @@ import styles from './home.module.scss'
 import Image from 'next/image'
 import dataInformation from '../data'
 
-import { SonyButton, SonyCarousel, SonyContainer, SonyLinkedInIcon } from '../components/SonyComponents'
+import { SonyButton, SonyCarousel, SonyContainer, SonyGitHubIcon, SonyLinkedInIcon } from '../components/SonyComponents'
 import CardsPortfolio from '../components/Cards';
 
 var item = [
@@ -92,19 +92,6 @@ export default function Home() {
             <div>
 
               <h2 style={{ paddingTop: '50px' }}>Portfólio</h2>
-              <h3>Desenvolvimento Web</h3>
-              <div className={styles.Items}>
-                {dataInformation.map((data, i) => {
-                  if (data.type === 1) {
-                    return (
-                      <div style={{ margin: '20px' }} key={i}>
-                        <CardsPortfolio props={data} />
-                      </div>
-                    )
-                  }
-                })}
-              </div>
-
 
               <h3>Desenvolvimento Desktop</h3>
 
@@ -119,6 +106,20 @@ export default function Home() {
                   }
                 })}
               </div>
+
+              <h3>Desenvolvimento Web</h3>
+              <div className={styles.Items}>
+                {dataInformation.map((data, i) => {
+                  if (data.type === 1) {
+                    return (
+                      <div style={{ margin: '20px' }} key={i}>
+                        <CardsPortfolio props={data} />
+                      </div>
+                    )
+                  }
+                })}
+              </div>
+
               <h3>Data Science</h3>
 
               <div className={styles.Items}>
@@ -141,17 +142,22 @@ export default function Home() {
         <SonyContainer className={styles.Footer} style={{ paddingBottom: '50px', color: 'white' }}>
           <div style={{ textAlign: 'center' }}>
             <h1 style={{ marginBottom: '50px', color: '#00e1ff' }}>Contato</h1>
-            <p>Se você quiser conversar, acesse: </p>
+            <p>Se você quiser conversar comigo, acesse: </p>
             <p><b>WhatsApp</b> (31)99135-9650</p>
             <p><b>Email</b> eriksonsantosp@gmail.com</p>
-            <p><b>Linkedin</b> test</p>
+
           </div>
           <br />
           <div className={styles.Copyright}>
             <p>Copyright©2018-2025, Erikson Santos. Todos os direitos reservados.</p>
-            <a href={'https://www.linkedin.com/in/erikson-pereira-a652a3193/?originalSubdomain=br'} style={{backgroundColor: 'black'}}>
-              <SonyLinkedInIcon fontSize="large" style={{ color: '#00e1ff', width: '5rem' }} />
-            </a>
+            <div>
+              <a href={'https://www.linkedin.com/in/eriksonsantos/'} style={{ backgroundColor: 'black' }}>
+                <SonyLinkedInIcon fontSize="large" style={{ color: '#00e1ff', width: '5rem' }} />
+              </a>
+              <a href={'https://github.com/eriksonsantos'} style={{ backgroundColor: 'black' }}>
+                <SonyGitHubIcon fontSize="large" style={{ color: '#00e1ff', width: '5rem' }} />
+              </a>
+            </div>
           </div>
 
         </SonyContainer>

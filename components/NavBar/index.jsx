@@ -10,7 +10,6 @@ function NavBar() {
           <SonyNavBarBrand className={styles.Logo} />
           <SonyNav className="justify-content-end">
             <SonyNavLink href="#home">Home</SonyNavLink>
-            <SonyNavLink href="#features">Portfolio</SonyNavLink>
             <SonyNavLink href="#pricing">Currículo</SonyNavLink>
           </SonyNav>
         </SonyContainer>

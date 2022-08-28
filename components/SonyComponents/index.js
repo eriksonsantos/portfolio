@@ -13,3 +13,4 @@ export {default as SonyTitleCards} from './SonyCards/Title'
 export {default as SonyTextCards} from './SonyCards/Text'
 
 export {default as SonyLinkedInIcon} from './SonyIcons/SonyLinkedinIcon'
+export {default as SonyGitHubIcon} from './SonyIcons/SonyGitHubIcon'
