@@ -5,18 +5,18 @@ import styles from './home.module.scss'
 import Image from 'next/image'
 import dataInformation from '../data'
 
-import { SonyCarousel, SonyContainer } from '../components/SonyComponents'
+import { SonyButton, SonyCarousel, SonyContainer, SonyLinkedInIcon } from '../components/SonyComponents'
 import CardsPortfolio from '../components/Cards';
 
 var item = [
   {
-    title: 'Desenvolvedor Web',
-    description: 'Sou desenvolvedor Web com o domínio das seguintes tecnologias: Javascript, Node, React e Next JS',
+    title: 'Desenvolvimento Web',
+    description: 'Desenvolvo aplicações Web com o domínio das seguintes tecnologias: Javascript, Node, React e Next JS',
     image: '/images/home/web.png'
   },
   {
-    title: 'Desenvolvedor Desktop',
-    description: 'Sou desenvolvedor Desktop com o domínio das seguintes tecnologias: Delphi, C/C++ e C#',
+    title: 'Desenvolvimento Desktop',
+    description: 'Desenvolvo aplicações Desktop com o domínio das seguintes tecnologias: Delphi, C/C++ e C#',
     image: '/images/home/desktop.png'
 
   },
@@ -92,7 +92,7 @@ export default function Home() {
             <div>
 
               <h2 style={{ paddingTop: '50px' }}>Portfólio</h2>
-              <h4>Desenvolvimento Web</h4>
+              <h3>Desenvolvimento Web</h3>
               <div className={styles.Items}>
                 {dataInformation.map((data, i) => {
                   if (data.type === 1) {
@@ -106,7 +106,7 @@ export default function Home() {
               </div>
 
 
-              <h4>Desenvolvimento Desktop</h4>
+              <h3>Desenvolvimento Desktop</h3>
 
               <div className={styles.Items}>
                 {dataInformation.map((data, i) => {
@@ -119,7 +119,7 @@ export default function Home() {
                   }
                 })}
               </div>
-              <h4>Data Science</h4>
+              <h3>Data Science</h3>
 
               <div className={styles.Items}>
                 {dataInformation.map((data, i) => {
@@ -137,8 +137,26 @@ export default function Home() {
 
         </SonyContainer>
 
-        <br />
+        <hr style={{ border: '3px dashed #00e1ff' }} />
+        <SonyContainer className={styles.Footer} style={{ paddingBottom: '50px', color: 'white' }}>
+          <div style={{ textAlign: 'center' }}>
+            <h1 style={{ marginBottom: '50px', color: '#00e1ff' }}>Contato</h1>
+            <p>Se você quiser conversar, acesse: </p>
+            <p><b>WhatsApp</b> (31)99135-9650</p>
+            <p><b>Email</b> eriksonsantosp@gmail.com</p>
+            <p><b>Linkedin</b> test</p>
+          </div>
+          <br />
+          <div className={styles.Copyright}>
+            <p>Copyright©2018-2025, Erikson Santos. Todos os direitos reservados.</p>
+            <a href={'https://www.linkedin.com/in/erikson-pereira-a652a3193/?originalSubdomain=br'} style={{backgroundColor: 'black'}}>
+              <SonyLinkedInIcon fontSize="large" style={{ color: '#00e1ff', width: '5rem' }} />
+            </a>
+          </div>
+
+        </SonyContainer>
       </div>
+
     </>
 
   )

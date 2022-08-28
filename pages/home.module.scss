@@ -1,4 +1,8 @@
 .Principal {
+    h1 {
+        font-size: 2.5rem;
+    }
+
     height: 100vh;
     background-image: url('img/background.jpg');
     background-size: 100% 100%;
@@ -45,16 +49,12 @@
 }
 
 .About {
-    background-image: url('img/background2.webp');
+    background-size: 35rem;
+
     div {
         display: flex;
         justify-content: center;
     }
-
-    // .Image {
-
-    //     // padding-top: 50px;
-    // }
 
     .Items {
         h2 {
@@ -78,25 +78,43 @@
 }
 
 .Portfolio {
-    background-image: url('img/background2.webp');
+    background-size: 50rem;
+
     h2 {
-        color: rgb(0, 225, 255);
+        color: #00e1ff;
         text-align: center;
     }
 
-    h4 {
+    h3 {
         color: white;
         margin-top: 30px;
     }
 
-    .Items{
+    .Items {
         display: flex;
         justify-content: left;
-        flex-wrap:  wrap;
+        flex-wrap: wrap;
 
     }
 }
-.Cards{
+
+.Cards {
     margin: '20px';
-    // background-color: red($color: rgb(233, 20, 20));
+}
+
+.Footer {
+    div p {
+        font-size: 1.2rem;
+    }
+
+    .Copyright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            font-size: 1.1rem;
+        }
+    }
 }

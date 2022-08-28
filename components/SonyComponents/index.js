@@ -11,3 +11,5 @@ export {default as SonyBodyCards} from './SonyCards/Body'
 export {default as SonyImgCards} from './SonyCards/Img'
 export {default as SonyTitleCards} from './SonyCards/Title'
 export {default as SonyTextCards} from './SonyCards/Text'
+
+export {default as SonyLinkedInIcon} from './SonyIcons/SonyLinkedinIcon'
