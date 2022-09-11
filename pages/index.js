@@ -151,7 +151,7 @@ export default function Home() {
           <div className={styles.Copyright}>
             <p>Copyright©2018-2025, Erikson Santos. Todos os direitos reservados.</p>
             <div>
-              <a href={'https://www.linkedin.com/in/eriksonsantos/'} style={{ backgroundColor: 'black' }}>
+              <a href={'https://www.linkedin.com/in/erikson-santos/'} style={{ backgroundColor: 'black' }}>
                 <SonyLinkedInIcon fontSize="large" style={{ color: '#00e1ff', width: '5rem' }} />
               </a>
               <a href={'https://github.com/eriksonsantos'} style={{ backgroundColor: 'black' }}>
